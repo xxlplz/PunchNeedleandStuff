@@ -324,3 +324,27 @@ font-size:14px;
     }
 
 }
+
+.category{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#111;
+
+}
+
+.category img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.category:hover{
+
+    opacity:0.8;
+
+}
