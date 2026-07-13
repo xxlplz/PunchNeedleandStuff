@@ -276,15 +276,15 @@ font-size:14px;
 
 
 
-.punch-gallery{
+.punch-products{
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(3,1fr);
+    grid-template-columns:1fr 1fr 1fr;
 
-gap:20px;
+    gap:50px 30px;
 
-padding:0 40px;
+    padding:0 8%;
 
 }
 
