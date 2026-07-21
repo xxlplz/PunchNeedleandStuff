@@ -412,20 +412,16 @@ footer{
 .thumbnail-row{
 
     display:flex;
-
     gap:15px;
-
     margin-top:20px;
 
 }
 
 
-
 .thumb{
 
-    width:90px;
-
-    height:110px;
+    width:80px;
+    height:100px;
 
     object-fit:cover;
 
@@ -434,7 +430,6 @@ footer{
     opacity:0.7;
 
 }
-
 
 
 .thumb:hover,
