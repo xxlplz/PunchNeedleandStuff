@@ -245,26 +245,67 @@ nav a{
     padding:0 8%;
 }
 
-.product-item{
-    text-align:center;
+.product-item a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:inherit;
+
 }
+
 
 .product-item img{
+
     width:100%;
+
     aspect-ratio:4/5;
+
     object-fit:cover;
+
     display:block;
+
+    transition:transform 0.3s ease, opacity 0.3s ease;
+
 }
+
+
+.product-item:hover img{
+
+    transform:scale(1.03);
+
+    opacity:0.9;
+
+}
+
 
 .product-item h3{
+
     margin-top:18px;
+
     font-size:15px;
+
     font-weight:400;
+
+    transition:0.3s;
+
 }
 
+
+.product-item:hover h3{
+
+    text-decoration:underline;
+
+}
+
+
 .product-item p{
+
     margin-top:8px;
+
     font-size:14px;
+
 }
 
 
