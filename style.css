@@ -358,6 +358,29 @@ nav a{
 
 }
 
+.works{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    padding:0 8%;
+
+}
+
+
+.works img{
+
+    width:100%;
+
+    aspect-ratio:4 / 5;
+
+    object-fit:cover;
+
+}
+
 
 .instagram-link{
 
