@@ -343,39 +343,27 @@ nav a{
    LATEST WORKS
 ====================================================== */
 
-
-.works{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:20px;
-
-}
-
-
-.works a{
+.works-section h2{
 
     display:block;
-
-}
-
-
-.works img{
 
     width:100%;
 
-    display:block;
+}
 
-    transition:opacity .3s ease;
+
+.works-section{
+
+    display:block;
 
 }
 
 
-.works a:hover img{
+.instagram-link{
 
-    opacity:.75;
+    margin-top:80px;
+
+    text-align:center;
 
 }
 
