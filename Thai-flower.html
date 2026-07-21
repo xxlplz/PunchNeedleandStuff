@@ -102,21 +102,45 @@
 
         <h4>Color</h4>
 
-        <div class="color-list">
+<div class="color-list">
 
-            <img src="images/beading/c-pink1.jpg">
+    <img 
+    src="images/beading/c-pink1.jpg"
+    alt="Pink1"
+    title="Pink1"
+    onclick="openColor(this.src)">
 
-            <img src="images/beading/c-pink2.jpg">
+    <img 
+    src="images/beading/c-pink2.jpg"
+    alt="Pink2"
+    title="Pink2"
+    onclick="openColor(this.src)">
 
-            <img src="images/beading/c-yellow1.jpg">
+    <img 
+    src="images/beading/c-yellow1.jpg"
+    alt="Yellow1"
+    title="Yellow1"
+    onclick="openColor(this.src)">
 
-            <img src="images/beading/c-yellow2.jpg">
+    <img 
+    src="images/beading/c-yellow2.jpg"
+    alt="Yellow2"
+    title="Yellow2"
+    onclick="openColor(this.src)">
 
-            <img src="images/beading/c-green1.jpg">
-            
-            <img src="images/beading/c-blue1.jpg">
+    <img 
+    src="images/beading/c-green1.jpg"
+    alt="Green"
+    title="Green"
+    onclick="openColor(this.src)">
 
-        </div>
+    <img 
+    src="images/beading/c-blue1.jpg"
+    alt="Blue"
+    title="Blue"
+    onclick="openColor(this.src)">
+
+</div>
 
 
         <a class="order-btn"
@@ -133,6 +157,14 @@
 
 <script src="product.js"></script>
 
+<div id="colorModal" class="color-modal">
+
+    <span onclick="closeColor()">×</span>
+
+    <img id="colorImage">
+
+</div>
+    
 </body>
 
 </html>
