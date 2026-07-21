@@ -259,23 +259,19 @@ nav a{
 .product-item img{
 
     width:100%;
-
     aspect-ratio:4/5;
-
     object-fit:cover;
-
     display:block;
 
-    transition:transform 0.3s ease, opacity 0.3s ease;
+    transition:transform 0.3s ease,
+               opacity 0.3s ease;
 
 }
 
-
 .product-item:hover img{
 
-    transform:scale(1.03);
-
-    opacity:0.9;
+    opacity:0.8;
+    transform:scale(1.02);
 
 }
 
