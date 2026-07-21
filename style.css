@@ -28,7 +28,7 @@ a:visited{
 }
 
 a:hover{
-    opacity:.7;
+    opacity:0.8;
     transition:.3s;
 }
 
@@ -270,7 +270,7 @@ nav a{
 
 .product-item:hover img{
 
-    opacity:0.7;
+    opacity:0.8;
 
 }
 
@@ -472,7 +472,7 @@ footer{
 
     cursor:pointer;
 
-    opacity:0.7;
+    opacity:0.8;
 
     display:block;
 
@@ -877,7 +877,7 @@ footer{
 
 .order-btn:hover{
 
-    opacity:0.7;
+    opacity:0.8;
 
     color:#fff !important;
 
