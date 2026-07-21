@@ -204,15 +204,30 @@ nav a{
    WORKS
 ====================================================== */
 
-.gallery{
+.works{
+
     display:grid;
+
     grid-template-columns:repeat(4,1fr);
+
     gap:20px;
+
 }
 
-.gallery img{
-    width:100%;
+
+.works a{
+
     display:block;
+
+}
+
+
+.works img{
+
+    width:100%;
+
+    display:block;
+
 }
 
 
