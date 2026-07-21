@@ -396,32 +396,41 @@ footer{
 }
 
 
+/* รูปใหญ่ */
 #mainImage{
 
     width:100%;
-    max-width:600px;
+    max-width:500px;
 
-    aspect-ratio:4/5;
+    aspect-ratio:4 / 5;
 
     object-fit:cover;
+
+    display:block;
 
 }
 
 
 
+/* แถวรูปเล็ก */
 .thumbnail-row{
 
     display:flex;
-    gap:15px;
+
+    gap:12px;
+
     margin-top:20px;
 
 }
 
 
-.thumb{
 
-    width:80px;
-    height:100px;
+/* รูปเล็ก */
+.thumbnail-row .thumb{
+
+    width:70px;
+
+    height:90px;
 
     object-fit:cover;
 
@@ -429,11 +438,15 @@ footer{
 
     opacity:0.7;
 
+    display:block;
+
 }
 
 
-.thumb:hover,
-.thumb.active{
+
+/* รูปที่เลือก */
+.thumbnail-row .thumb:hover,
+.thumbnail-row .thumb.active{
 
     opacity:1;
 
