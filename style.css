@@ -449,16 +449,27 @@ a:hover{
 
 .dropdown:hover .dropdown-content{
 
-
-    .about-contact{
-
-    text-align:center;
-
-    padding:100px 8%;
+    display:block;
 
 }
 
-.about-contact h2{
+.contact{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.contact h2{
 
     font-size:28px;
 
@@ -466,15 +477,13 @@ a:hover{
 
     letter-spacing:3px;
 
-    margin-bottom:30px;
+    margin-bottom:40px;
 
 }
 
-.about-text{
+.contact p{
 
-    max-width:600px;
-
-    margin:0 auto 40px;
+    margin:8px 0;
 
     font-size:14px;
 
@@ -482,15 +491,7 @@ a:hover{
 
 }
 
-.contact-info p{
-
-    margin:8px 0;
-
-    font-size:14px;
-
-}
-
-.contact-info a{
+.contact a{
 
     color:#111;
 
@@ -498,12 +499,9 @@ a:hover{
 
 }
 
-.contact-info a:hover{
+.contact a:hover{
 
-    opacity:0.6;
-
-}
-
-    display:block;
+    opacity:.6;
 
 }
+
