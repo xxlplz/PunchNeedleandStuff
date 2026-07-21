@@ -371,3 +371,84 @@ a:hover{
 
 }
 
+
+.dropdown{
+
+    position:relative;
+
+    display:inline-block;
+
+}
+
+
+.dropbtn{
+
+    display:block;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    text-transform:uppercase;
+
+}
+
+
+.dropdown-content{
+
+    display:none;
+
+    position:absolute;
+
+    top:100%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    min-width:200px;
+
+    background:#fff;
+
+    padding:18px 0;
+
+    text-align:center;
+
+    z-index:999;
+
+}
+
+
+.dropdown-content a{
+
+    display:block;
+
+    padding:10px 0;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-size:12px;
+
+    letter-spacing:1px;
+
+    transition:opacity .25s;
+
+}
+
+
+.dropdown-content a:hover{
+
+    opacity:.5;
+
+}
+
+
+.dropdown:hover .dropdown-content{
+
+    display:block;
+
+}
