@@ -26,3 +26,13 @@ function closeColor(){
     document.getElementById("colorModal").style.display="none";
 
 }
+
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "Escape"){
+
+        closeColor();
+
+    }
+
+});
