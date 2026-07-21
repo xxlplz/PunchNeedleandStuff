@@ -204,19 +204,19 @@ nav a{
    WORKS
 ====================================================== */
 
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
+.gallery a{
 
-.gallery img{
-    width:100%;
     display:block;
+
 }
 
-.instagram-link{
-    text-align:center;
+
+.gallery a img{
+
+    width:100%;
+
+    display:block;
+
 }
 
 
