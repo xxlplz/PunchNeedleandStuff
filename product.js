@@ -11,3 +11,18 @@ function changeImage(img){
     img.classList.add("active");
 
 }
+
+function openColor(src){
+
+    document.getElementById("colorModal").style.display="flex";
+
+    document.getElementById("colorImage").src = src;
+
+}
+
+
+function closeColor(){
+
+    document.getElementById("colorModal").style.display="none";
+
+}
