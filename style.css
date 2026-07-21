@@ -273,25 +273,43 @@ nav a{
 ====================================================== */
 
 .about{
-    min-height:100vh;
+
+    min-height:60vh;
+
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
+
     text-align:center;
+
 }
 
 .about h2{
+
     font-size:28px;
+
     font-weight:400;
+
     letter-spacing:3px;
+
     margin-bottom:40px;
+
 }
 
 .about p{
-    margin:8px 0;
+
+    max-width:650px;
+
+    margin:8px auto;
+
     font-size:14px;
-    line-height:1.8;
+
+    line-height:1.9;
+
 }
 
 /* ======================================================
