@@ -2,15 +2,56 @@ const mainImage = document.getElementById("mainImage");
 
 const thumbs = document.querySelectorAll(".thumb");
 
+let current = 0;
+
+
+// คลิกรูปเล็ก
+
 function changeImage(img){
 
     mainImage.src = img.src;
 
-    thumbs.forEach(t=>t.classList.remove("active"));
+    thumbs.forEach(t => t.classList.remove("active"));
 
     img.classList.add("active");
 
+    current = [...thumbs].indexOf(img);
+
 }
+
+
+// ปุ่มซ้าย
+
+document.querySelector(".left").onclick = function(){
+
+    current--;
+
+    if(current < 0){
+
+        current = thumbs.length - 1;
+
+    }
+
+    changeImage(thumbs[current]);
+
+};
+
+
+// ปุ่มขวา
+
+document.querySelector(".right").onclick = function(){
+
+    current++;
+
+    if(current >= thumbs.length){
+
+        current = 0;
+
+    }
+
+    changeImage(thumbs[current]);
+
+};
 
 function openColor(src){
 
