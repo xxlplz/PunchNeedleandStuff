@@ -530,3 +530,180 @@ footer{
     cursor:pointer;
 
 }
+
+
+/* Product Layout */
+
+.product-page{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:80px 40px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+}
+
+
+
+/* รูปสินค้า */
+
+.product-gallery{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+#mainImage{
+
+    width:100%;
+
+    max-width:500px;
+
+    aspect-ratio:4 / 5;
+
+    object-fit:cover;
+
+}
+
+
+
+/* รูปเล็ก */
+
+.thumbnail-row{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+
+.thumbnail-row .thumb{
+
+    width:80px;
+
+    height:100px;
+
+    object-fit:cover;
+
+}
+
+
+
+/* รายละเอียดสินค้า */
+
+.product-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+
+.product-info h2{
+
+    text-align:left;
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+
+.product-info ul{
+
+    padding-left:20px;
+
+    line-height:1.8;
+
+}
+
+
+
+.price{
+
+    font-size:28px;
+
+    margin:20px 0;
+
+}
+
+
+/* สี */
+
+.color-list{
+
+    display:flex;
+
+    gap:15px;
+
+    margin:15px 0 30px;
+
+}
+
+
+.color-list img{
+
+    width:60px !important;
+
+    height:60px !important;
+
+    object-fit:cover;
+
+}
+
+
+/* ปุ่ม */
+
+.order-btn{
+
+    display:inline-block;
+
+    width:200px;
+
+    text-align:center;
+
+    padding:15px;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:800px){
+
+    .product-page{
+
+        grid-template-columns:1fr;
+
+        padding:40px 20px;
+
+        gap:40px;
+
+    }
+
+
+}
