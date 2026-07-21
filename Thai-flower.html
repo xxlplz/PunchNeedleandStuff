@@ -206,11 +206,11 @@
 
 <script src="product.js"></script>
 
-<div id="colorModal" class="color-modal">
+<div id="colorModal" class="color-modal" onclick="closeColor()">
 
-    <span onclick="closeColor()">×</span>
+    <img id="colorImage" onclick="event.stopPropagation()">
 
-    <img id="colorImage">
+    <span class="close-btn" onclick="closeColor(event)">&times;</span>
 
 </div>
 
