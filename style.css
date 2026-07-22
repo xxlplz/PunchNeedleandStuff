@@ -990,15 +990,6 @@ footer{
 
 .order-btn{
 
-    background:#000;
-
-    color:#fff !important;
-
-}
-
-
-.order-btn:hover{
-
     background:#fff;
 
     color:#000 !important;
@@ -1006,11 +997,14 @@ footer{
 }
 
 
-.order-btn:visited{
+.order-btn:hover{
+
+    background:#000;
 
     color:#fff !important;
 
 }
+
 
 
 
