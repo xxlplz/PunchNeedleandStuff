@@ -999,7 +999,9 @@ footer{
 
 .order-btn:hover{
 
-    opacity:.8;
+    background:#fff;
+
+    color:#000 !important;
 
 }
 
