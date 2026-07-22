@@ -1156,3 +1156,10 @@ footer{
 
 
 }
+
+.usd-price{
+    font-size:14px;
+    color:#777;
+    margin-left:8px;
+    font-weight:400;
+}
