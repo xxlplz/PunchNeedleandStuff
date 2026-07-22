@@ -924,6 +924,57 @@ footer{
 
 /* ORDER BUTTON */
 
+/* PRODUCT ACTIONS */
+
+.product-actions{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin-top:40px;
+
+}
+
+
+/* ADD TO CART */
+
+.add-cart-btn{
+
+    display:inline-block;
+
+    width:200px;
+
+    padding:15px 0;
+
+    background:#fff;
+
+    color:#000;
+
+    border:1px solid #000;
+
+    text-align:center;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.add-cart-btn:hover{
+
+    background:#000;
+
+    color:#fff;
+
+}
+
 
 .order-btn{
 
@@ -948,7 +999,6 @@ footer{
     transition:.3s;
 
 }
-
 
 
 .order-btn:hover{
