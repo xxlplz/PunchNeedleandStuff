@@ -921,27 +921,20 @@ footer{
 }
 
 
-
-/* ORDER BUTTON */
-
 /* PRODUCT ACTIONS */
 
 .product-actions{
-
     display:flex;
-
     flex-direction:column;
-
     gap:15px;
-
     margin-top:40px;
-
 }
 
 
-/* ADD TO CART */
+/* BOTH BUTTON STYLE */
 
-.add-cart-btn{
+.add-cart-btn,
+.order-btn{
 
     display:inline-block;
 
@@ -949,23 +942,34 @@ footer{
 
     padding:15px 0;
 
-    background:#fff;
-
-    color:#000;
-
-    border:1px solid #000;
-
     text-align:center;
 
     font-size:14px;
 
     letter-spacing:1px;
 
+    text-decoration:none;
+
     cursor:pointer;
 
     transition:.3s;
 
+    box-sizing:border-box;
 }
+
+
+/* ADD TO CART */
+
+.add-cart-btn{
+
+    background:#fff;
+
+    color:#000;
+
+    border:1px solid #000;
+
+}
+
 
 .add-cart-btn:hover{
 
@@ -976,27 +980,16 @@ footer{
 }
 
 
+
+/* ORDER */
+
 .order-btn{
-
-    display:inline-block;
-
-    width:200px;
-
-    padding:15px 0;
 
     background:#000;
 
     color:#fff !important;
 
-    text-align:center;
-
-    text-decoration:none;
-
-    font-size:14px;
-
-    letter-spacing:1px;
-
-    transition:.3s;
+    border:1px solid #000;
 
 }
 
@@ -1004,6 +997,13 @@ footer{
 .order-btn:hover{
 
     opacity:.8;
+
+}
+
+
+.order-btn:visited{
+
+    color:#fff !important;
 
 }
 
