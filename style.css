@@ -1212,3 +1212,19 @@ footer{
     margin-left:8px;
     font-weight:400;
 }
+
+/* ======================================================
+   TEST
+====================================================== */
+
+.slider{
+    display:flex;
+    gap:24px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+}
+
+.slider::-webkit-scrollbar{
+    display:none;
+}
+
