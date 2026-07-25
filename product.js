@@ -77,3 +77,8 @@ document.addEventListener("keydown", function(e){
     }
 
 });
+
+slider.scrollBy({
+    left:300,
+    behavior:"smooth"
+});
