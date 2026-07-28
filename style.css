@@ -1290,6 +1290,7 @@ footer{
 
 .custom-card h3{
     margin-top:20px;
+    text-align:left;
     font-size:17px;
     font-weight:500;
     letter-spacing:.5px;
@@ -1299,7 +1300,7 @@ footer{
 .custom-card p{
     margin-top:8px;
     font-size:14px;
-    color:#555;
+    color:#fff;
 }
 
 
