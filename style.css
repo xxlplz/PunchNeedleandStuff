@@ -1212,3 +1212,62 @@ footer{
     margin-left:8px;
     font-weight:400;
 }
+
+.slider{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.slide{
+
+    width:100%;
+
+    display:none;
+
+}
+
+.slide.active{
+
+    display:block;
+
+}
+
+.prev,
+.next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:35px;
+
+    height:35px;
+
+    border:none;
+
+    background:rgba(0,0,0,.4);
+
+    color:#fff;
+
+    cursor:pointer;
+
+    border-radius:50%;
+
+}
+
+.prev{
+
+    left:10px;
+
+}
+
+.next{
+
+    right:10px;
+
+}
