@@ -1299,8 +1299,9 @@ footer{
 
 .custom-card p{
     margin-top:8px;
+    text-align:left;
     font-size:14px;
-    color:#fff;
+    color:#000;
 }
 
 
