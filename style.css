@@ -1337,3 +1337,41 @@ footer{
 }
 
 }
+
+.custom-dots{
+
+    position:absolute;
+
+    bottom:12px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+
+.custom-dot{
+
+    width:7px;
+
+    height:7px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.6);
+
+    cursor:pointer;
+
+}
+
+
+.custom-dot.active{
+
+    background:#000;
+
+}
