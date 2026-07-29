@@ -1362,17 +1362,44 @@ footer{
 
 .lightbox-close{
 
-    position:absolute;
+    position:fixed;
 
-    top:20px;
+    right:30px;
 
-    right:35px;
+    bottom:30px;
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
 
     color:#fff;
 
-    font-size:42px;
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
 
     cursor:pointer;
+
+    transition:.25s;
+
+    z-index:10000;
+
+    backdrop-filter:blur(6px);
+
+}
+
+
+.lightbox-close:hover{
+
+    background:rgba(255,255,255,.3);
 
 }
 
