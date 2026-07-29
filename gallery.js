@@ -88,3 +88,48 @@ document.querySelectorAll(".custom-slider").forEach(slider=>{
     startSlider();
 
 });
+
+const lightbox=document.querySelector(".lightbox");
+
+const lightboxImg=document.querySelector(".lightbox-image");
+
+document.querySelectorAll(".custom-slide").forEach(img=>{
+
+    img.addEventListener("click",()=>{
+
+        lightbox.classList.add("show");
+
+        lightboxImg.src=img.src;
+
+    });
+
+});
+
+
+document.querySelector(".lightbox-close").onclick=()=>{
+
+    lightbox.classList.remove("show");
+
+};
+
+
+lightbox.onclick=(e)=>{
+
+    if(e.target===lightbox){
+
+        lightbox.classList.remove("show");
+
+    }
+
+};
+
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key==="Escape"){
+
+        lightbox.classList.remove("show");
+
+    }
+
+});
