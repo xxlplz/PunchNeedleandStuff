@@ -1,226 +1,184 @@
 // ==========================
-// Product Gallery
+// Latest Works Lightbox
 // ==========================
 
-const mainImage = document.getElementById("mainImage");
-
-const thumbs = document.querySelectorAll(".thumb");
-
-let current = 0;
+const workImages = document.querySelectorAll(".work-image");
 
 
-// ==========================
-// Change Main Image
-// ==========================
+workImages.forEach((img, i) => {
 
-function changeImage(img){
+    img.addEventListener("click", () => {
 
-    mainImage.src = img.src;
+        currentImages = [...workImages];
 
-    thumbs.forEach(t => {
-        t.classList.remove("active");
+        currentIndex = i;
+
+        lightboxImg.src = currentImages[currentIndex].src;
+
+        lightbox.classList.add("show");
+
     });
 
-    img.classList.add("active");
-
-    current = [...thumbs].indexOf(img);
-
-}
-
-
-// ==========================
-// Product Gallery Arrows
-// ==========================
-
-const productLeft = document.querySelector(".product-gallery .left");
-
-const productRight = document.querySelector(".product-gallery .right");
-
-
-
-productLeft.addEventListener("click",()=>{
-
-    current--;
-
-    if(current < 0){
-
-        current = thumbs.length - 1;
-
-    }
-
-    changeImage(thumbs[current]);
-
 });
 
-
-
-productRight.addEventListener("click",()=>{
-
-    current++;
-
-    if(current >= thumbs.length){
-
-        current = 0;
-
-    }
-
-    changeImage(thumbs[current]);
-
-});
-
-
-
 // ==========================
-// Color Modal
+// Custom Slider + Lightbox
 // ==========================
-
-function openColor(src){
-
-    document.getElementById("colorModal").style.display="flex";
-
-    document.getElementById("colorImage").src = src;
-
-}
-
-
-
-function closeColor(){
-
-    document.getElementById("colorModal").style.display="none";
-
-}
-
-
-
-// ESC close color modal
-
-document.addEventListener("keydown", function(e){
-
-    if(e.key === "Escape"){
-
-        closeColor();
-
-    }
-
-});
-
-
-
-// ==========================
-// Product Lightbox
-// ==========================
-
 
 const lightbox = document.querySelector(".lightbox");
+const lightboxImg = document.querySelector(".lightbox-image");
+const closeBtn = document.querySelector(".lightbox-close");
+const prevBtn = document.querySelector(".lightbox .left");
+const nextBtn = document.querySelector(".lightbox .right");
 
-const lightboxImage = document.querySelector(".lightbox-image");
+let currentImages = [];
+let currentIndex = 0;
 
-const closeLightbox = document.querySelector(".lightbox-close");
+// ==========================
+// Create Slider
+// ==========================
 
-const lightboxLeft = document.querySelector(".lightbox .left");
+document.querySelectorAll(".custom-slider").forEach((slider) => {
 
-const lightboxRight = document.querySelector(".lightbox .right");
+    const slides = slider.querySelectorAll(".custom-slide");
+    const dotsBox = slider.querySelector(".custom-dots");
 
+    let index = 0;
+    let timer;
 
-let lightboxImages = [];
+    // ---------- Show Slide ----------
 
-let lightboxIndex = 0;
+    function showSlide(i) {
 
+        slides.forEach(slide => slide.classList.remove("active"));
+        dotsBox.querySelectorAll(".custom-dot")
+               .forEach(dot => dot.classList.remove("active"));
 
+        slides[i].classList.add("active");
+        dotsBox.children[i].classList.add("active");
 
-// เปิด Lightbox เมื่อคลิกภาพใหญ่
+        index = i;
+    }
 
-mainImage.addEventListener("click",()=>{
+    // ---------- Create Dots ----------
 
+    slides.forEach((slide, i) => {
 
-    lightboxImages = [...thumbs].map(img => img.src);
+        const dot = document.createElement("span");
+        dot.className = "custom-dot";
 
+        if (i === 0) {
+            dot.classList.add("active");
+        }
 
-    lightboxIndex = current;
+        dot.addEventListener("click", () => {
+            showSlide(i);
+        });
 
+        dotsBox.appendChild(dot);
 
-    lightboxImage.src = lightboxImages[lightboxIndex];
+    });
 
+    // ---------- Auto Slide ----------
 
-    lightbox.classList.add("show");
+    function startSlider() {
 
+        timer = setInterval(() => {
+
+            index++;
+
+            if (index >= slides.length) {
+                index = 0;
+            }
+
+            showSlide(index);
+
+        }, 4000);
+
+    }
+
+    function stopSlider() {
+        clearInterval(timer);
+    }
+
+    slider.addEventListener("mouseenter", stopSlider);
+    slider.addEventListener("mouseleave", startSlider);
+
+    startSlider();
+
+    // ---------- Open Lightbox ----------
+
+    slides.forEach((slide, i) => {
+
+        slide.addEventListener("click", () => {
+
+            currentImages = [...slides];
+            currentIndex = i;
+
+            lightboxImg.src = currentImages[currentIndex].src;
+            lightbox.classList.add("show");
+
+        });
+
+    });
 
 });
 
+// ==========================
+// Lightbox
+// ==========================
 
+function showLightboxImage() {
 
-// แสดงรูปใน Lightbox
-
-function showLightbox(){
-
-    lightboxImage.src = lightboxImages[lightboxIndex];
+    lightboxImg.src = currentImages[currentIndex].src;
 
 }
 
+// Previous
 
-
-// Lightbox Previous
-
-lightboxLeft.addEventListener("click",(e)=>{
+prevBtn.addEventListener("click", (e) => {
 
     e.stopPropagation();
 
+    currentIndex--;
 
-    lightboxIndex--;
-
-
-    if(lightboxIndex < 0){
-
-        lightboxIndex = lightboxImages.length - 1;
-
+    if (currentIndex < 0) {
+        currentIndex = currentImages.length - 1;
     }
 
-
-    showLightbox();
+    showLightboxImage();
 
 });
 
+// Next
 
-
-// Lightbox Next
-
-lightboxRight.addEventListener("click",(e)=>{
+nextBtn.addEventListener("click", (e) => {
 
     e.stopPropagation();
 
+    currentIndex++;
 
-    lightboxIndex++;
-
-
-    if(lightboxIndex >= lightboxImages.length){
-
-        lightboxIndex = 0;
-
+    if (currentIndex >= currentImages.length) {
+        currentIndex = 0;
     }
 
-
-    showLightbox();
+    showLightboxImage();
 
 });
 
+// Close Button
 
-
-// Close button
-
-closeLightbox.addEventListener("click",()=>{
+closeBtn.addEventListener("click", () => {
 
     lightbox.classList.remove("show");
 
 });
 
+// Click Background
 
+lightbox.addEventListener("click", (e) => {
 
-// Click outside image
-
-lightbox.addEventListener("click",(e)=>{
-
-
-    if(e.target === lightbox){
+    if (e.target === lightbox) {
 
         lightbox.classList.remove("show");
 
@@ -228,38 +186,28 @@ lightbox.addEventListener("click",(e)=>{
 
 });
 
+// Keyboard
 
+document.addEventListener("keydown", (e) => {
 
-// Keyboard control
+    if (!lightbox.classList.contains("show")) return;
 
-document.addEventListener("keydown",(e)=>{
-
-
-    if(!lightbox.classList.contains("show")) return;
-
-
-
-    if(e.key === "Escape"){
+    if (e.key === "Escape") {
 
         lightbox.classList.remove("show");
 
     }
 
+    if (e.key === "ArrowLeft") {
 
-
-    if(e.key === "ArrowLeft"){
-
-        lightboxLeft.click();
+        prevBtn.click();
 
     }
 
+    if (e.key === "ArrowRight") {
 
-
-    if(e.key === "ArrowRight"){
-
-        lightboxRight.click();
+        nextBtn.click();
 
     }
-
 
 });
