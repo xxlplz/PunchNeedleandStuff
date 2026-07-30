@@ -100,37 +100,37 @@
     src="images/the-cosmetics-keychain/TCK-flower-pink-yellow-01.jpg"
     alt="the cosmetics keychain"
     title="Flower-Pink-Yellow"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
     <img 
     src="images/the-cosmetics-keychain/TCK-flower-peach-01.jpg"
     alt="the cosmetics keychain"
     title="Flower-Peach"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
     <img 
     src="images/the-cosmetics-keychain/TCK-flower-violet-01.jpg"
     alt="the cosmetics keychain"
     title="Flower-Violet"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
     <img 
     src="images/the-cosmetics-keychain/TCK-star-blue-01.jpg"
     alt="the cosmetics keychain"
     title="Star-Blue"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
     <img 
     src="images/the-cosmetics-keychain/TCK-star-yellow-01.jpg"
     alt="the cosmetics keychain"
     title="Star-Yellow"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
     <img 
     src="images/beading/c-blue1.jpg"
     alt="the cosmetics keychain"
     title="Ribbon Blue"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
 </div>
 
@@ -203,11 +203,16 @@
 
 <div id="colorModal" class="color-modal" onclick="closeColor()">
 
-    <img id="colorImage" onclick="event.stopPropagation()">
+    <div class="color-preview">
 
-    <span class="close-btn" onclick="closeColor(event)">&times;</span>
+        <img id="colorImage" onclick="event.stopPropagation()">
+
+        <div id="colorTitle"></div>
+
+    </div>
 
 </div>
+    
 
 </main>
     
