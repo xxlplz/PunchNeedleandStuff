@@ -1,4 +1,27 @@
 // ==========================
+// Latest Works Lightbox
+// ==========================
+
+const workImages = document.querySelectorAll(".work-image");
+
+
+workImages.forEach((img, i) => {
+
+    img.addEventListener("click", () => {
+
+        currentImages = [...workImages];
+
+        currentIndex = i;
+
+        lightboxImg.src = currentImages[currentIndex].src;
+
+        lightbox.classList.add("show");
+
+    });
+
+});
+
+// ==========================
 // Custom Slider + Lightbox
 // ==========================
 
