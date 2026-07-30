@@ -1,3 +1,7 @@
+// ==========================
+// Product Gallery
+// ==========================
+
 const mainImage = document.getElementById("mainImage");
 
 const thumbs = document.querySelectorAll(".thumb");
@@ -5,13 +9,17 @@ const thumbs = document.querySelectorAll(".thumb");
 let current = 0;
 
 
-// คลิกรูปเล็ก
+// ==========================
+// Change Main Image
+// ==========================
 
 function changeImage(img){
 
     mainImage.src = img.src;
 
-    thumbs.forEach(t => t.classList.remove("active"));
+    thumbs.forEach(t => {
+        t.classList.remove("active");
+    });
 
     img.classList.add("active");
 
@@ -20,9 +28,17 @@ function changeImage(img){
 }
 
 
-// ปุ่มซ้าย
+// ==========================
+// Product Gallery Arrows
+// ==========================
 
-document.querySelector(".left").onclick = function(){
+const productLeft = document.querySelector(".product-gallery .left");
+
+const productRight = document.querySelector(".product-gallery .right");
+
+
+
+productLeft.addEventListener("click",()=>{
 
     current--;
 
@@ -34,12 +50,11 @@ document.querySelector(".left").onclick = function(){
 
     changeImage(thumbs[current]);
 
-};
+});
 
 
-// ปุ่มขวา
 
-document.querySelector(".right").onclick = function(){
+productRight.addEventListener("click",()=>{
 
     current++;
 
@@ -51,7 +66,13 @@ document.querySelector(".right").onclick = function(){
 
     changeImage(thumbs[current]);
 
-};
+});
+
+
+
+// ==========================
+// Color Modal
+// ==========================
 
 function openColor(src){
 
@@ -62,11 +83,16 @@ function openColor(src){
 }
 
 
+
 function closeColor(){
 
     document.getElementById("colorModal").style.display="none";
 
 }
+
+
+
+// ESC close color modal
 
 document.addEventListener("keydown", function(e){
 
@@ -78,13 +104,12 @@ document.addEventListener("keydown", function(e){
 
 });
 
+
+
 // ==========================
 // Product Lightbox
 // ==========================
 
-const mainImage = document.querySelector("#mainImage");
-
-const thumbs = document.querySelectorAll(".thumb");
 
 const lightbox = document.querySelector(".lightbox");
 
@@ -92,9 +117,9 @@ const lightboxImage = document.querySelector(".lightbox-image");
 
 const closeLightbox = document.querySelector(".lightbox-close");
 
-const lightboxLeft = document.querySelector(".lightbox-arrow.left");
+const lightboxLeft = document.querySelector(".lightbox .left");
 
-const lightboxRight = document.querySelector(".lightbox-arrow.right");
+const lightboxRight = document.querySelector(".lightbox .right");
 
 
 let lightboxImages = [];
@@ -103,24 +128,15 @@ let lightboxIndex = 0;
 
 
 
-thumbs.forEach(img => {
+// เปิด Lightbox เมื่อคลิกภาพใหญ่
 
-    lightboxImages.push(img.src);
-
-});
+mainImage.addEventListener("click",()=>{
 
 
-
-// เปิด Lightbox
-
-mainImage.addEventListener("click", ()=>{
+    lightboxImages = [...thumbs].map(img => img.src);
 
 
-    lightboxImages = [...document.querySelectorAll(".thumb")]
-        .map(img => img.src);
-
-
-    lightboxIndex = lightboxImages.indexOf(mainImage.src);
+    lightboxIndex = current;
 
 
     lightboxImage.src = lightboxImages[lightboxIndex];
@@ -133,7 +149,7 @@ mainImage.addEventListener("click", ()=>{
 
 
 
-// เปลี่ยนรูป
+// แสดงรูปใน Lightbox
 
 function showLightbox(){
 
@@ -143,19 +159,22 @@ function showLightbox(){
 
 
 
-// ซ้าย
+// Lightbox Previous
 
 lightboxLeft.addEventListener("click",(e)=>{
 
     e.stopPropagation();
 
+
     lightboxIndex--;
+
 
     if(lightboxIndex < 0){
 
-        lightboxIndex = lightboxImages.length-1;
+        lightboxIndex = lightboxImages.length - 1;
 
     }
+
 
     showLightbox();
 
@@ -163,7 +182,7 @@ lightboxLeft.addEventListener("click",(e)=>{
 
 
 
-// ขวา
+// Lightbox Next
 
 lightboxRight.addEventListener("click",(e)=>{
 
@@ -186,7 +205,7 @@ lightboxRight.addEventListener("click",(e)=>{
 
 
 
-// ปิด
+// Close button
 
 closeLightbox.addEventListener("click",()=>{
 
@@ -196,14 +215,51 @@ closeLightbox.addEventListener("click",()=>{
 
 
 
-// คลิกพื้นหลังปิด
+// Click outside image
 
 lightbox.addEventListener("click",(e)=>{
+
 
     if(e.target === lightbox){
 
         lightbox.classList.remove("show");
 
     }
+
+});
+
+
+
+// Keyboard control
+
+document.addEventListener("keydown",(e)=>{
+
+
+    if(!lightbox.classList.contains("show")) return;
+
+
+
+    if(e.key === "Escape"){
+
+        lightbox.classList.remove("show");
+
+    }
+
+
+
+    if(e.key === "ArrowLeft"){
+
+        lightboxLeft.click();
+
+    }
+
+
+
+    if(e.key === "ArrowRight"){
+
+        lightboxRight.click();
+
+    }
+
 
 });
