@@ -1403,18 +1403,26 @@ footer{
 
 }
 
-.lightbox .left{
-
-    left:30px;
-
-}
-
+.lightbox .left,
 .lightbox .right{
 
-    right:30px;
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:50px;
+
+    cursor:pointer;
 
 }
-
 
 /* Product Text */
 
