@@ -102,37 +102,37 @@
     src="images/beading/c-pink1.jpg"
     alt="Thai Flower"
     title="Ribbon Pink1"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
     <img 
     src="images/beading/c-pink2.jpg"
     alt="Thai Flower"
     title="Ribbon Pink2"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
     <img 
     src="images/beading/c-yellow1.jpg"
     alt="Thai Flower"
     title="Ribbon Yellow1"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
     <img 
     src="images/beading/c-yellow2.jpg"
     alt="Thai Flower"
     title="Ribbon Yellow2"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
     <img 
     src="images/beading/c-green1.jpg"
     alt="Thai Flower"
     title="Ribbon Green"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
     <img 
     src="images/beading/c-blue1.jpg"
     alt="Thai Flower"
     title="Ribbon Blue"
-    onclick="openColor(this.src)">
+    onclick="openColor(this.src, this.title)">
 
 </div>
 
@@ -205,13 +205,29 @@
 
 <div id="colorModal" class="color-modal" onclick="closeColor()">
 
-    <img id="colorImage" onclick="event.stopPropagation()">
+    <div class="color-preview">
 
-    <span class="close-btn" onclick="closeColor(event)">&times;</span>
+        <img id="colorImage" onclick="event.stopPropagation()">
+
+        <div id="colorTitle"></div>
+
+    </div>
 
 </div>
-
+    
 </main>
+
+<div class="lightbox">
+
+    <span class="lightbox-close">&times;</span>
+
+    <button class="lightbox-arrow left">&#10094;</button>
+
+    <img class="lightbox-image">
+
+    <button class="lightbox-arrow right">&#10095;</button>
+
+</div>
     
 <div id="footer"></div>
 <script src="components.js"></script>
