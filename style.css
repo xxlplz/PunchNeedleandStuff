@@ -1403,6 +1403,18 @@ footer{
 
 }
 
+.lightbox .left{
+
+    left:30px;
+
+}
+
+.lightbox .right{
+
+    right:30px;
+
+}
+
 
 /* Product Text */
 
