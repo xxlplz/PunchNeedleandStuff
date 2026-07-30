@@ -791,6 +791,15 @@ footer{
 
     position:relative;
 
+    max-width:90vw;
+    max-height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
 }
 
 
@@ -798,7 +807,15 @@ footer{
 
     max-width:90vw;
 
-    max-height:90vh;
+    max-height:80vh;
+
+    width:auto;
+
+    height:auto;
+
+    object-fit:contain;
+
+    display:block;
 
 }
 
@@ -813,7 +830,7 @@ footer{
 
     transform:translateX(-50%);
 
-    background:rgba(0,0,0,.6);
+    background:rgba(0,0,0,.65);
 
     color:white;
 
@@ -824,6 +841,8 @@ footer{
     font-size:14px;
 
     letter-spacing:1px;
+
+    white-space:nowrap;
 
 }
 
