@@ -133,3 +133,15 @@ document.addEventListener("keydown",(e)=>{
     }
 
 });
+
+document.querySelectorAll(".work-image").forEach(img=>{
+
+    img.addEventListener("click",()=>{
+
+        lightbox.classList.add("show");
+
+        lightboxImg.src=img.src;
+
+    });
+
+});
