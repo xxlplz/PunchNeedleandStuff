@@ -787,6 +787,46 @@ footer{
 
 }
 
+.color-preview{
+
+    position:relative;
+
+}
+
+
+.color-preview img{
+
+    max-width:90vw;
+
+    max-height:90vh;
+
+}
+
+
+#colorTitle{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:rgba(0,0,0,.6);
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+}
+
 
 
 /* ======================================================
