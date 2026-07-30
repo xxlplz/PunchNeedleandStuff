@@ -1495,3 +1495,17 @@ footer{
     background:#000;
 
 }
+
+.work-image{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.work-image:hover{
+
+    opacity:.9;
+
+}
