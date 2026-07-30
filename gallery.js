@@ -145,3 +145,24 @@ document.querySelectorAll(".work-image").forEach(img=>{
     });
 
 });
+
+let currentIndex = 0;
+currentIndex = index;
+showImage(currentIndex);
+
+currentIndex++;
+
+if(currentIndex >= images.length){
+    currentIndex = 0;
+}
+
+showImage(currentIndex);
+
+currentIndex--;
+
+if(currentIndex < 0){
+    currentIndex = images.length - 1;
+}
+
+showImage(currentIndex);
+
