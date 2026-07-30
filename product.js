@@ -74,11 +74,13 @@ productRight.addEventListener("click",()=>{
 // Color Modal
 // ==========================
 
-function openColor(src){
+function openColor(src, title){
 
     document.getElementById("colorModal").style.display="flex";
 
     document.getElementById("colorImage").src = src;
+
+    document.getElementById("colorTitle").innerText = title;
 
 }
 
