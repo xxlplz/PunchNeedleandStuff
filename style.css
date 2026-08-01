@@ -768,7 +768,7 @@ footer{
 
 .color-list{
 
-    display:flex;
+    display:grid;
     grid-template-columns:repeat(6, 1fr);
     gap:15px;
     margin:15px 0 30px;
