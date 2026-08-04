@@ -1626,13 +1626,15 @@ footer{
 
 .search-container{
     position: relative;
+    width:420px;
+    margin:18px auto 0;
     display: flex;
     justify-content: center;
     margin-top: 18px;
 }
 
 .search-box{
-    width: 420px;
+    width: 100%;
     max-width: 90%;
     padding: 12px 18px;
     border: 1px solid #ddd;
@@ -1642,7 +1644,7 @@ footer{
 
 #searchResult{
    
-    width:420px;
+    width:100%;
     max-width:90%;
     
     display:none;
