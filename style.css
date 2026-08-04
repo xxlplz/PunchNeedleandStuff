@@ -1641,7 +1641,10 @@ footer{
 }
 
 #searchResult{
-
+   
+    width:420px;
+    max-width:90%;
+    
     display:none;
 
     position:absolute;
