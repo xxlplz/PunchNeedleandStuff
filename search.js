@@ -1,23 +1,59 @@
-function initSearch(){
+function initSearch() {
 
     const searchInput = document.getElementById("searchInput");
+    const searchResult = document.getElementById("searchResult");
 
+    if (!searchInput || !searchResult) return;
 
-    if(!searchInput){
+    searchInput.addEventListener("input", function () {
 
-        console.log("Search input not found");
+        const keyword = this.value.trim().toLowerCase();
 
-        return;
+        searchResult.innerHTML = "";
 
-    }
+        if (keyword === "") {
+            searchResult.style.display = "none";
+            return;
+        }
 
+        const result = products.filter(product =>
+            product.name.toLowerCase().includes(keyword) ||
+            product.category.toLowerCase().includes(keyword)
+        );
 
-    console.log("Search ready");
+        if (result.length === 0) {
+            searchResult.innerHTML =
+                `<div class="search-empty">No products found</div>`;
+        } else {
 
+            result.forEach(product => {
 
-    searchInput.addEventListener("input", function(){
+                searchResult.innerHTML += `
+                    <a href="${product.url}" class="search-item">
+                        <img src="${product.image}" alt="${product.name}">
+                        <div class="search-info">
+                            <h4>${product.name}</h4>
+                            <p>${product.category}</p>
+                        </div>
+                    </a>
+                `;
 
-        console.log(this.value);
+            });
+
+        }
+
+        searchResult.style.display = "block";
+
+    });
+
+    // คลิกนอกกล่องแล้วปิด
+    document.addEventListener("click", function (e) {
+
+        if (!e.target.closest(".search-container")) {
+
+            searchResult.style.display = "none";
+
+        }
 
     });
 
