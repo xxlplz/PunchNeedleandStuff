@@ -3,6 +3,7 @@ const products = [
     {
         name: "Salmon Sushi Punch Needle Keychain",
         category: "Keychain",
+        keywords: ["salmon","sushi","food","japanese","fish","keychain"],
         image: "images/punch-needle/keychain-salmon-01.jpg",
         url: "salmon-sushi.html"
     },
@@ -10,6 +11,7 @@ const products = [
     {
         name: "Poison Apple Punch Needle Keychain",
         category: "Keychain",
+        keywords: ["poison apple","halloween","food","snow white","apple","keychain"],
         image: "images/punch-needle/poison-apple-01.jpg",
         url: "poison-apple.html"
     },
@@ -18,6 +20,7 @@ const products = [
         name: "Tomato Coaster",
         category: "Coaster",
         image: "images/punch-needle/tomato-coaster-01.jpg",
+        keywords: ["tomato","coaster","fruit","red","rug"],        
         url: "tomato-coaster.html"
     }
 
