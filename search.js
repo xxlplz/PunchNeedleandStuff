@@ -1,28 +1,50 @@
 const searchInput = document.getElementById("searchInput");
-
-const products = document.querySelectorAll(".product-item");
+const searchResult = document.getElementById("searchResult");
 
 
 searchInput.addEventListener("input", function(){
 
-    const keyword = this.value.toLowerCase();
+    let keyword = this.value.toLowerCase();
 
 
-    products.forEach(product => {
-
-        const text = product.innerText.toLowerCase();
+    searchResult.innerHTML = "";
 
 
-        if(text.includes(keyword)){
+    if(keyword === ""){
+        return;
+    }
 
-            product.style.display = "";
 
-        } else {
+    let result = products.filter(product => {
 
-            product.style.display = "none";
-
-        }
+        return (
+            product.name.toLowerCase().includes(keyword) ||
+            product.category.toLowerCase().includes(keyword)
+        );
 
     });
+
+
+    result.forEach(product => {
+
+
+        searchResult.innerHTML += `
+
+        <a href="${product.url}" class="search-item">
+
+            <img src="${product.image}">
+
+            <div>
+                <h4>${product.name}</h4>
+                <p>${product.category}</p>
+            </div>
+
+        </a>
+
+        `;
+
+
+    });
+
 
 });
