@@ -12,7 +12,7 @@ const products = [
         name: "Poison Apple Punch Needle Keychain",
         category: "Keychain",
         keywords: ["poison apple","halloween","food","snow white","apple","keychain"],
-        image: "images/punch-needle/poison-apple-01.jpg",
+        image: "images/punch-needle/keychain-poison_apple-01.jpg",
         url: "poison-apple.html"
     },
 
