@@ -1625,7 +1625,19 @@ footer{
 }
 
 .search-container{
-    position:relative;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.search-box{
+    width: 420px;
+    max-width: 90%;
+    padding: 12px 18px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 15px;
 }
 
 #searchResult{
