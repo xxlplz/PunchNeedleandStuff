@@ -11,3 +11,18 @@ async function loadComponent(id, file){
 loadComponent("header","header.html");
 
 loadComponent("footer","footer.html");
+
+// ---------- Google Analytics ----------
+
+const ga = document.createElement("script");
+ga.async = true;
+ga.src = "https://www.googletagmanager.com/gtag/js?id=G-4WECRVSVHD";
+document.head.appendChild(ga);
+
+window.dataLayer = window.dataLayer || [];
+window.gtag = function () {
+    dataLayer.push(arguments);
+};
+
+gtag("js", new Date());
+gtag("config", "G-4WECRVSVHD");
