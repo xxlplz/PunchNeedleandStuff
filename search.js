@@ -1,50 +1,18 @@
-const searchInput = document.getElementById("searchInput");
-const searchResult = document.getElementById("searchResult");
+document.addEventListener("DOMContentLoaded", function(){
+
+    const searchInput = document.getElementById("searchInput");
 
 
-searchInput.addEventListener("input", function(){
-
-    let keyword = this.value.toLowerCase();
-
-
-    searchResult.innerHTML = "";
-
-
-    if(keyword === ""){
+    if(!searchInput){
+        console.log("Search input not found");
         return;
     }
 
 
-    let result = products.filter(product => {
+    searchInput.addEventListener("input", function(){
 
-        return (
-            product.name.toLowerCase().includes(keyword) ||
-            product.category.toLowerCase().includes(keyword)
-        );
+        console.log(this.value);
 
     });
-
-
-    result.forEach(product => {
-
-
-        searchResult.innerHTML += `
-
-        <a href="${product.url}" class="search-item">
-
-            <img src="${product.image}">
-
-            <div>
-                <h4>${product.name}</h4>
-                <p>${product.category}</p>
-            </div>
-
-        </a>
-
-        `;
-
-
-    });
-
 
 });
