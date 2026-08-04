@@ -19,9 +19,9 @@ const products = [
     {
         name: "Tomato Coaster",
         category: "Coaster",
-        image: "images/punch-needle/tomato-coaster-01.jpg",
+        image: "images/punch-needle/coaster-tomato-out-01.jpg",
         keywords: ["tomato","coaster","fruit","red","rug"],        
-        url: "tomato-coaster.html"
+        url: "tomato-fruit-coaster.html"
     }
 
 ];
