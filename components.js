@@ -6,9 +6,11 @@ async function loadComponent(id, file){
 
     document.getElementById(id).innerHTML = html;
 
+    console.log("Loaded:", id);
 
-    // เริ่ม Search หลัง Header โหลดเสร็จ
     if(id === "header" && typeof initSearch === "function"){
+
+        console.log("Calling initSearch");
 
         initSearch();
 
