@@ -1878,10 +1878,8 @@ header{
 .menu-toggle{
 
     display:block;
-
     background:none;
     border:none;
-
     font-size:28px;
     cursor:pointer;
 
@@ -1889,7 +1887,9 @@ header{
 
 
 .main-nav{
+
     align-items:flex-start;
+
     position:fixed;
 
     top:0;
@@ -1913,6 +1913,7 @@ header{
 
 }
 
+
 .main-nav > a,
 .main-nav .dropbtn{
 
@@ -1920,6 +1921,7 @@ header{
     width:100%;
 
 }
+
 
 .main-nav.active{
 
@@ -1945,7 +1947,6 @@ header{
 }
 
 
-
 .menu-overlay{
 
     position:fixed;
@@ -1958,11 +1959,24 @@ header{
 
 }
 
+
 .menu-overlay.active{
 
     display:block;
 
 }
+
+
+
+/* dropdown mobile */
+
+.dropdown{
+
+    width:100%;
+
+}
+
+
 .dropdown-content{
 
     display:none;
@@ -1993,5 +2007,5 @@ header{
 
 }
 
+
 }
-   
