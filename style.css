@@ -93,8 +93,6 @@ h4{
 
 header{
 
-    position:static;
-
     background:rgba(255,255,255,.95);
 
     backdrop-filter:blur(10px);
