@@ -2,40 +2,23 @@
 // MOBILE MENU
 // ======================================================
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("click", function(e){
 
 
-const menuToggle = document.querySelector(".menu-toggle");
-const menuClose = document.querySelector(".menu-close");
-const mainNav = document.querySelector(".main-nav");
-const overlay = document.querySelector(".menu-overlay");
+    if(e.target.closest(".menu-toggle")){
+
+        document.querySelector(".main-nav")
+        .classList.add("active");
+
+    }
 
 
-if(!menuToggle) return;
+    if(e.target.closest(".menu-close")){
 
+        document.querySelector(".main-nav")
+        .classList.remove("active");
 
-menuToggle.addEventListener("click", () => {
-
-    mainNav.classList.add("active");
-    overlay.classList.add("active");
-
-});
-
-
-menuClose.addEventListener("click", () => {
-
-    mainNav.classList.remove("active");
-    overlay.classList.remove("active");
-
-});
-
-
-overlay.addEventListener("click", () => {
-
-    mainNav.classList.remove("active");
-    overlay.classList.remove("active");
-
-});
+    }
 
 
 });
