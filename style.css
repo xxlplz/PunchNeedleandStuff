@@ -1862,19 +1862,6 @@ footer{
 }
 
    
-.dropdown-content a{
-
-    display:block;
-
-    width:100%;
-
-    padding:5px 0;
-
-    text-align:left;
-
-}
-
-
 .dropdown .dropbtn{
 
     cursor:pointer;
