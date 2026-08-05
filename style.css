@@ -2021,5 +2021,17 @@ header{
 
 }
 
+.dropdown.active .dropdown-content{
+    display:flex !important;
+    flex-direction:column;
+    gap:15px;
+}
+
+
+.dropdown-content a{
+    display:block;
+    text-align:left;
+}
 
 }
+
