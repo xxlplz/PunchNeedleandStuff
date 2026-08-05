@@ -22,3 +22,27 @@ document.addEventListener("click", function(e){
 
 
 });
+
+document.addEventListener("click", function(e){
+
+
+    const dropBtn = e.target.closest(".dropbtn");
+
+
+    if(
+        dropBtn &&
+        window.innerWidth <= 768
+    ){
+
+        const dropdown = dropBtn.parentElement;
+
+
+        dropdown.classList.toggle("active");
+
+
+        e.preventDefault();
+
+    }
+
+
+});
