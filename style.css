@@ -1737,136 +1737,6 @@ footer{
 }
 
 
-/* ---------- Mobile ---------- */
-
-@media (max-width:768px){
-
-header{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-}
-
-.menu-toggle{
-
-    display:block;
-
-    background:none;
-    border:none;
-
-    font-size:30px;
-
-    cursor:pointer;
-
-    z-index:2001;
-
-}
-
-.menu-close{
-
-    display:block;
-
-    background:none;
-    border:none;
-
-    font-size:30px;
-
-    cursor:pointer;
-
-    margin-bottom:25px;
-
-}
-
-
-/* ---------- Slide Menu ---------- */
-
-.main-nav{
-
-    position:fixed;
-
-    top:0;
-    right:-100%;
-
-    width:300px;
-
-    height:100vh;
-
-    background:#fff;
-
-    padding:35px;
-
-    box-sizing:border-box;
-
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-
-    gap:18px;
-
-    transition:.35s;
-
-    overflow-y:auto;
-
-    z-index:2000;
-
-    box-shadow:-5px 0 20px rgba(0,0,0,.12);
-
-}
-
-.main-nav.show{
-
-    right:0;
-
-}
-
-
-/* ---------- Menu ---------- */
-
-.main-nav>a,
-.main-nav .dropbtn{
-
-    font-size:18px;
-
-    width:100%;
-
-}
-
-
-/* Desktop Dropdown ปิดก่อน */
-
-.dropdown-content{
-
-    display:none !important;
-
-}
-
-
-/* Search */
-
-.search-container{
-
-    width:100%;
-
-    margin-top:30px;
-
-}
-
-.search-box{
-
-    width:100%;
-
-}
-
-}
-
-.menu-toggle,
-.menu-close{
-    display:none;
-}
-
-
 .menu-overlay{
     display:none;
 }
@@ -1977,13 +1847,6 @@ header{
 
 /* dropdown mobile */
 
-.dropdown{
-
-    width:100%;
-
-}
-
-
 .dropdown-content{
 
     display:none;
@@ -1998,17 +1861,7 @@ header{
 
 }
 
-.dropdown.active .dropdown-content{
-
-    display:flex !important;
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-
+   
 .dropdown-content a{
 
     display:block;
