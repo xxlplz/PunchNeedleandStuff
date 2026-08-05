@@ -22,6 +22,15 @@ loadComponent("header","header.html");
 
 loadComponent("footer","footer.html");
 
+if (id === "header") {
+
+    const script = document.createElement("script");
+    script.src = "mobile-menu.js";
+
+    document.body.appendChild(script);
+
+}
+
 // ---------- Google Analytics ----------
 
 const ga = document.createElement("script");
@@ -36,3 +45,4 @@ window.gtag = function () {
 
 gtag("js", new Date());
 gtag("config", "G-4WECRVSVHD");
+
