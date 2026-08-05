@@ -1713,6 +1713,14 @@ footer{
 
 }
 
+.menu-toggle,
+.menu-close,
+.menu-overlay{
+
+    display:none;
+
+}
+
 @media (max-width:768px){
 
     /* ---------- Search ---------- */
@@ -1899,13 +1907,3 @@ footer{
 
 }
 
-
-/* ---------- Default ---------- */
-
-.menu-toggle,
-.menu-close,
-.menu-overlay{
-
-    display:none;
-
-}
