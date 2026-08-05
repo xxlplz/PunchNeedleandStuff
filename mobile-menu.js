@@ -1,10 +1,7 @@
-// ======================================================
-// MOBILE MENU
-// ======================================================
-
 document.addEventListener("click", function(e){
 
 
+    // เปิด mobile menu
     if(e.target.closest(".menu-toggle")){
 
         document.querySelector(".main-nav")
@@ -13,6 +10,7 @@ document.addEventListener("click", function(e){
     }
 
 
+    // ปิด mobile menu
     if(e.target.closest(".menu-close")){
 
         document.querySelector(".main-nav")
@@ -21,11 +19,8 @@ document.addEventListener("click", function(e){
     }
 
 
-});
 
-document.addEventListener("click", function(e){
-
-
+    // mobile dropdown
     const dropBtn = e.target.closest(".dropbtn");
 
 
@@ -34,7 +29,7 @@ document.addEventListener("click", function(e){
         window.innerWidth <= 768
     ){
 
-        const dropdown = dropBtn.parentElement;
+        const dropdown = dropBtn.closest(".dropdown");
 
 
         dropdown.classList.toggle("active");
