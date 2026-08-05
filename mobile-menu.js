@@ -4,35 +4,29 @@
 
 const menuToggle = document.querySelector(".menu-toggle");
 const menuClose = document.querySelector(".menu-close");
-const nav = document.querySelector(".main-nav");
+const mainNav = document.querySelector(".main-nav");
+const overlay = document.querySelector(".menu-overlay");
 
-if (menuToggle && menuClose && nav) {
 
-    menuToggle.addEventListener("click", () => {
+menuToggle.addEventListener("click", () => {
 
-        nav.classList.add("show");
+    mainNav.classList.add("active");
+    overlay.classList.add("active");
 
-    });
+});
 
-    menuClose.addEventListener("click", () => {
 
-        nav.classList.remove("show");
+menuClose.addEventListener("click", () => {
 
-    });
+    mainNav.classList.remove("active");
+    overlay.classList.remove("active");
 
-    // ปิดเมนูเมื่อกดนอกเมนู
-    document.addEventListener("click", (e) => {
+});
 
-        if (
-            nav.classList.contains("show") &&
-            !nav.contains(e.target) &&
-            !menuToggle.contains(e.target)
-        ) {
 
-            nav.classList.remove("show");
+overlay.addEventListener("click", () => {
 
-        }
+    mainNav.classList.remove("active");
+    overlay.classList.remove("active");
 
-    });
-
-}
+});
