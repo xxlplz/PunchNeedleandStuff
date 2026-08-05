@@ -2042,3 +2042,62 @@ header{
 
 }
 
+@media(max-width:768px){
+
+
+.dropdown{
+
+    position:static;
+    display:block;
+    width:100%;
+
+}
+
+
+.dropdown-content{
+
+    position:static;
+
+    transform:none;
+
+    min-width:0;
+
+    width:100%;
+
+    background:none;
+
+    padding:15px 0 15px 25px;
+
+    text-align:left;
+
+}
+
+
+.dropdown-content a{
+
+    padding:8px 0;
+
+    text-align:left;
+
+    font-size:12px;
+
+}
+
+
+.dropdown:hover .dropdown-content{
+
+    display:none;
+
+}
+
+
+.dropdown.active .dropdown-content{
+
+    display:flex !important;
+
+    flex-direction:column;
+
+}
+
+
+}
