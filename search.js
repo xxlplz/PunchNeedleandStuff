@@ -18,7 +18,8 @@ function initSearch() {
 
         const result = products.filter(product =>
             product.name.toLowerCase().includes(keyword) ||
-            product.category.toLowerCase().includes(keyword)
+            product.category.toLowerCase().includes(keyword) ||
+            product.keywords.toLowerCase().includes(keyword)
         );
 
         if (result.length === 0) {
