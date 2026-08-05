@@ -1914,10 +1914,17 @@ header{
 }
 
 
-.main-nav > a,
-.main-nav .dropbtn{
+.main-nav a{
 
     text-align:left;
+    width:100%;
+    display:block;
+
+}
+
+
+.dropdown{
+
     width:100%;
 
 }
@@ -1997,6 +2004,13 @@ header{
     flex-direction:column;
 
     gap:15px;
+
+}
+
+
+.dropdown-content a{
+
+    text-align:left;
 
 }
 
