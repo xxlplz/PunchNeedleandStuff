@@ -16,11 +16,11 @@ function initSearch() {
             return;
         }
 
-        const result = products.filter(product =>
-            product.name.toLowerCase().includes(keyword) ||
-            product.category.toLowerCase().includes(keyword) ||
-            product.keywords.toLowerCase().includes(keyword)
-        );
+    const result = products.filter(product =>
+        product.name.toLowerCase().includes(keyword) ||
+        product.category.toLowerCase().includes(keyword) ||
+        (product.keywords && product.keywords.toLowerCase().includes(keyword))
+    );
 
         if (result.length === 0) {
             searchResult.innerHTML =
