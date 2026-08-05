@@ -1768,7 +1768,6 @@ footer{
     .main-nav{
 
         position:fixed;
-
         top:0;
         right:-100%;
 
@@ -1888,7 +1887,7 @@ footer{
 
         flex-direction:column;
 
-        gap:15px;
+        gap:0px;
 
     }
 
