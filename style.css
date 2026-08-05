@@ -1963,5 +1963,35 @@ header{
     display:block;
 
 }
+.dropdown-content{
+
+    display:none;
+
+    position:static;
+
+    width:100%;
+
+    padding-left:20px;
 
 }
+
+
+.dropdown.active .dropdown-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+.dropdown .dropbtn{
+
+    cursor:pointer;
+
+}
+
+}
+   
