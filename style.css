@@ -1291,12 +1291,6 @@ footer{
 }
 
 
-.custom-slider{
-    position:relative;
-    overflow:hidden;
-}
-
-
 .custom-slide{
     width:100%;
     aspect-ratio:4/5;
