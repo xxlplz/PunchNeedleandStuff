@@ -44,7 +44,7 @@ const products = [
         name: "Onigiri Punch Needle Keychain",
         category: "Keychain",
         keywords: "Onigiri food japanese keychain punch needle พวงกุญแจ ไหมพรม ข้าวปั้น ข้าวปั้นสามเหลี่ยม สาหร่าย สามเหลี่ยม สีขาว ขาว สีเขียว เขียว white dark green rice",
-        image: "images/punch-needle/kkeychain-onigiri-01.jpg",
+        image: "images/punch-needle/keychain-onigiri-01.jpg",
         url: "onigiri.html"
     },
 
