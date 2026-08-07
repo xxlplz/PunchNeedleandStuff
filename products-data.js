@@ -185,10 +185,90 @@ const products = [
     },
 
     {
+        name: "Tamagotchi",
+        category: "Punch Needle Frame",
+        image: "images/punch-needle/frame-tamagotchi-02.jpg",
+        keywords: "tamagotchi frame keychain พวงกุญแจ ไหมพรม punch needle Y2K ทามาก็อตจิ ของเล่น กรอบรูป เฟรม สีม่วง สีชมพู ม่วง ชมพู เกม",        
+        url: "tamagotchi.html"
+    },
+
+    {
+        name: "Game Boy",
+        category: "Punch Needle Frame",
+        image: "images/punch-needle/frame-gameboy-01.jpg",
+        keywords: "game boy gameboy frame keychain พวงกุญแจ ไหมพรม punch needle Y2K เกมบอย ของเล่น กรอบรูป เฟรม สีเทา เทา เกม",        
+        url: "game-boy.html"
+    },
+
+    {
+        name: "พวงมาลัย (Thai flower garland)",
+        category: "Beading Bag Charm",
+        image: "images/beading/BF-pink1_02.jpg",
+        keywords: "พวงมาลัย Thai flower garland ลูกปัด respect บูชา ไหว้ halloween ฮาโลวัน bag charm ห้อยกระเป๋า ชาร์ม ดอกไม้ beading",        
+        url: "Thai-flower.html"
+    },
+
+    {
+        name: "The Cosmetics Keychain",
+        category: "Beading Bag Charm",
+        image: "images/the-cosmetics-keychain/TCK-flower-pink-yellow-01.jpg",
+        keywords: "keychain พวงกุญแจ cosmetics เครื่องสำอาง ยาดม เครื่องประดับ bag charm ห้อยกระเป๋า ชาร์ม ลูกปัด บัคเคิล",        
+        url: "the-cosmetics-keychain.html"
+    },
+
+    {
+        name: "Bouquet",
+        category: "Beading Flower",
+        image: "images/beading/bouquet-02.jpg",
+        keywords: "keychain พวงกุญแจ ดอกไม้ ช่อดอกไม้ flower bouquet โบว์ ริบบิ้น ลูกปัด beading",        
+        url: "bouquet.html"
+    },
+
+    {
+        name: "Taco",
+        category: "Cable Tie",
+        image: "images/sewing/sewing-taco_01.jpg",
+        keywords: "taco cable tie ทาโก้ ที่รัดสายไฟ ที่รัดหูฟัง สายไฟ หูฟัง fast food street อาหาร สีน้ำตาล น้ำตาล แดง สีแดง เขียว สีเขียว เหลือง สีเหลือง brown red green yellow",        
+        url: "bouquet.html"
+    },
+
+    {
+        name: "Dumpling",
+        category: "Cable Tie",
+        image: "images/sewing/sewing-dumpling_01.jpg",
+        keywords: "dumpling cable tie ดัมปลิ้ง เกี๊ยว มันดู ที่รัดสายไฟ ที่รัดหูฟัง สายไฟ หูฟัง fast food street อาหาร สีครีม ครีม สีขาว ขาว white beige",        
+        url: "dumpling-cable-tie.html"
+    },
+
+    {
+        name: "Tomato",
+        category: "Mini Zipper Bag",
+        image: "images/sewing/tomato-mini-zipper-bag-01.jpg",
+        keywords: "tomato keychain bag charm กระเป๋าซิบ มินิ กระเป๋าจิ๋ว กระเป๋ากลม round กระเป๋าเล็กๆ ที่เก็บหูฟัง หูฟัง มะเขือเทศ สีแดง แดง สีเขียว เขียว red green vegetable fruit ผลไม้ ผัก",        
+        url: "tomato-mini-zipper-bag.html"
+    },
+
+    {
+        name: "NIYAM_A Tote Bag",
+        category: "Tote Bag",
+        image: "images/sewing/niyama-totebag-03.jpg",
+        keywords: "niyama niyam_a กระเป๋า ประเป๋าผ้า tote bag ระบาย แพทเทิร์น ลายปริ้นท์ ruffles",        
+        url: "niyama-tote-bag.html"
+    },
+
+    {
+        name: "Belt Skirt",
+        category: "Upcycling",
+        image: "images/sewing/sewing-beltskirt_01.jpg",
+        keywords: "belt skirt เข็มขัด กระโปรง ระบาย ลูกไม้ ยีนส์ ruffles lace upcycling diy ผ้าผูกเอว",        
+        url: "belt-skirt.html"
+    },
+    
+    {
         name: "Custom Orders",
         category: "Custom Punch Needle",
         image: "images/punch-needle/custom-chihuahua-01.jpg",
-        keywords: "custom order keychain พวงกุญแจ ไหมพรม punch needle สั่งทำ ตามสั่ง หมา สุนัข dog pet สัตว์เลี้ยง แมว cat",        
+        keywords: "custom order keychain พวงกุญแจ ไหมพรม punch needle สั่งทำ ตามสั่ง หมา สุนัข dog pet สัตว์เลี้ยง แมว cat chihuahua ชิวาวา ปอม pomeranian",        
         url: "custom-orders.html"
     }
 
