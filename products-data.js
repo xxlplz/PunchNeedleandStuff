@@ -212,7 +212,7 @@ const products = [
         name: "The Cosmetics Keychain",
         category: "Beading Bag Charm",
         image: "images/the-cosmetics-keychain/TCK-flower-pink-yellow-01.jpg",
-        keywords: "keychain พวงกุญแจ cosmetics เครื่องสำอาง ยาดม เครื่องประดับ bag charm ห้อยกระเป๋า ชาร์ม ลูกปัด บัคเคิล",        
+        keywords: "keychain พวงกุญแจ cosmetics เครื่องสำอาง ยาดม เครื่องประดับ bag charm ห้อยกระเป๋า ชาร์ม ลูกปัด บัคเคิล beading",        
         url: "the-cosmetics-keychain.html"
     },
 
@@ -228,7 +228,7 @@ const products = [
         name: "Taco",
         category: "Cable Tie",
         image: "images/sewing/sewing-taco_01.jpg",
-        keywords: "taco cable tie ทาโก้ ที่รัดสายไฟ ที่รัดหูฟัง สายไฟ หูฟัง fast food street อาหาร สีน้ำตาล น้ำตาล แดง สีแดง เขียว สีเขียว เหลือง สีเหลือง brown red green yellow",        
+        keywords: "taco cable tie ทาโก้ ที่รัดสายไฟ ที่รัดหูฟัง สายไฟ หูฟัง fast food street อาหาร สีน้ำตาล น้ำตาล แดง สีแดง เขียว สีเขียว เหลือง สีเหลือง brown red green yellow sewing เย็บ",        
         url: "bouquet.html"
     },
 
@@ -236,7 +236,7 @@ const products = [
         name: "Dumpling",
         category: "Cable Tie",
         image: "images/sewing/sewing-dumpling_01.jpg",
-        keywords: "dumpling cable tie ดัมปลิ้ง เกี๊ยว มันดู ที่รัดสายไฟ ที่รัดหูฟัง สายไฟ หูฟัง fast food street อาหาร สีครีม ครีม สีขาว ขาว white beige",        
+        keywords: "dumpling cable tie ดัมปลิ้ง เกี๊ยว มันดู ที่รัดสายไฟ ที่รัดหูฟัง สายไฟ หูฟัง fast food street อาหาร สีครีม ครีม สีขาว ขาว white beige sewing เย็บ",        
         url: "dumpling-cable-tie.html"
     },
 
@@ -244,7 +244,7 @@ const products = [
         name: "Tomato",
         category: "Mini Zipper Bag",
         image: "images/sewing/tomato-mini-zipper-bag-01.jpg",
-        keywords: "tomato keychain bag charm กระเป๋าซิบ มินิ กระเป๋าจิ๋ว กระเป๋ากลม round กระเป๋าเล็กๆ ที่เก็บหูฟัง หูฟัง มะเขือเทศ สีแดง แดง สีเขียว เขียว red green vegetable fruit ผลไม้ ผัก",        
+        keywords: "tomato keychain bag charm กระเป๋าซิบ มินิ กระเป๋าจิ๋ว กระเป๋ากลม round กระเป๋าเล็กๆ ที่เก็บหูฟัง หูฟัง มะเขือเทศ สีแดง แดง สีเขียว เขียว red green vegetable fruit ผลไม้ ผัก sewing เย็บ",        
         url: "tomato-mini-zipper-bag.html"
     },
 
@@ -252,7 +252,7 @@ const products = [
         name: "NIYAM_A Tote Bag",
         category: "Tote Bag",
         image: "images/sewing/niyama-totebag-03.jpg",
-        keywords: "niyama niyam_a กระเป๋า ประเป๋าผ้า tote bag ระบาย แพทเทิร์น ลายปริ้นท์ ruffles",        
+        keywords: "niyama niyam_a กระเป๋า ประเป๋าผ้า tote bag ระบาย แพทเทิร์น ลายปริ้นท์ ruffles sewing เย็บ",        
         url: "niyama-tote-bag.html"
     },
 
@@ -260,7 +260,7 @@ const products = [
         name: "Belt Skirt",
         category: "Upcycling",
         image: "images/sewing/sewing-beltskirt_01.jpg",
-        keywords: "belt skirt เข็มขัด กระโปรง ระบาย ลูกไม้ ยีนส์ ruffles lace upcycling diy ผ้าผูกเอว",        
+        keywords: "belt skirt เข็มขัด กระโปรง ระบาย ลูกไม้ ยีนส์ ruffles lace upcycling diy ผ้าผูกเอว sewing เย็บ",        
         url: "belt-skirt.html"
     },
     
