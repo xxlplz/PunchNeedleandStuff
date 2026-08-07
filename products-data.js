@@ -20,8 +20,8 @@ const products = [
         name: "Hot Dog",
         category: "Punch Needle Keychain",
         keywords: "hot dog fast food keychain punch needle พวงกุญแจ ไหมพรม อาหาร ฮอตด็อก ไส้กรอก ขนมปัง สีแดง แดง สีน้ำตาล น้ำตาล street สตรีทฟู้ด ซอส สีเหลือง เหลือง bread yellow red brown sausage",
-        image: "images/punch-needle/keychain-bacon-01.jpg",
-        url: "I-love-bacon.html"
+        image: "images/punch-needle/keychain-hotdog-01.jpg",
+        url: "hot-dog.html"
     },
     
     {
