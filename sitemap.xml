@@ -5,8 +5,12 @@
     <loc>https://xxlplz.github.io/PunchNeedleandStuff/</loc>
   </url>
 
-    <url>
+  <url>
     <loc>https://xxlplz.github.io/PunchNeedleandStuff/index.html</loc>
+  </url>
+
+  <url>
+    <loc>https://xxlplz.github.io/PunchNeedleandStuff/header.html</loc>
   </url>
 
   <url>
@@ -58,6 +62,18 @@
   </url>
 
   <url>
+    <loc>https://xxlplz.github.io/PunchNeedleandStuff/ikura-sushi.html</loc>
+  </url>
+
+  <url>
+    <loc>https://xxlplz.github.io/PunchNeedleandStuff/maki-sushi.html</loc>
+  </url>
+
+  <url>
+    <loc>https://xxlplz.github.io/PunchNeedleandStuff/onigiri.html</loc>
+  </url>
+  
+  <url>
     <loc>https://xxlplz.github.io/PunchNeedleandStuff/ume-onigiri.html</loc>
   </url>
 
@@ -69,6 +85,10 @@
     <loc>https://xxlplz.github.io/PunchNeedleandStuff/dango.html</loc>
   </url>
 
+  <url>
+    <loc>https://xxlplz.github.io/PunchNeedleandStuff/poison-apple.html</loc>
+  </url>
+  
   <url>
     <loc>https://xxlplz.github.io/PunchNeedleandStuff/ghost.html</loc>
   </url>
@@ -150,6 +170,10 @@
   </url>
 
   <url>
+    <loc>https://xxlplz.github.io/PunchNeedleandStuff/shoes-accessories.html</loc>
+  </url>
+  
+  <url>
     <loc>https://xxlplz.github.io/PunchNeedleandStuff/sewing.html</loc>
   </url>
 
@@ -164,6 +188,10 @@
   <url>
     <loc>https://xxlplz.github.io/PunchNeedleandStuff/tomato-mini-zipper-bag.html</loc>
   </url>
+
+  <url>
+    <loc>https://xxlplz.github.io/PunchNeedleandStuff/niyama-tote-bag.html</loc>
+  </url>
   
   <url>
     <loc>https://xxlplz.github.io/PunchNeedleandStuff/collections.html</loc>
@@ -171,6 +199,10 @@
 
   <url>
     <loc>https://xxlplz.github.io/PunchNeedleandStuff/fast-food-collection.html</loc>
+  </url>
+
+  <url>
+    <loc>https://xxlplz.github.io/PunchNeedleandStuff/japanese-food-collection.html</loc>
   </url>
 
   <url>
@@ -191,6 +223,14 @@
 
   <url>
     <loc>https://xxlplz.github.io/PunchNeedleandStuff/freestyle-collection.html</loc>
+  </url>
+
+  <url>
+    <loc>https://xxlplz.github.io/PunchNeedleandStuff/halloween-collection.html</loc>
+  </url>
+
+  <url>
+    <loc>https://xxlplz.github.io/PunchNeedleandStuff/respect-collection.html</loc>
   </url>
   
   <url>
