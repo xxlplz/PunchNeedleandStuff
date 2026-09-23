@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://xxlplz.github.io/PunchNeedleandStuff/sitemap.xml
