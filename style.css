@@ -1911,3 +1911,35 @@ footer{
 
 }
 
+
+.product-colors {
+    margin: 20px 0;
+}
+
+.product-colors h4 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+}
+
+.color-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 9px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.color-item span:last-child {
+    color: #999;
+    white-space: nowrap;
+}
+
