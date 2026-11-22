@@ -1912,32 +1912,68 @@ footer{
 }
 
 
+.available-colors {
+    margin: 25px 0;
+}
+
+.available-colors h4 {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+}
 
 .color-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 25px;
+    gap: 20px 15px;
 }
 
-.color-item {
+.color-option {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 9px 0;
-    border-bottom: 1px solid #eee;
-    font-size: 13px;
+    gap: 12px;
 }
 
-.color-dot {
-    width: 13px;
-    height: 13px;
-    min-width: 13px;
+.swatch {
+    display: block;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
     border-radius: 50%;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(0,0,0,0.12);
 }
 
-.color-item span:last-child {
-    color: #999;
-    margin-left: auto;
-    white-space: nowrap;
+.color-option div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
+
+.color-option strong {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.color-option small {
+    font-size: 11px;
+    color: #999;
+}
+
+@media (max-width: 480px) {
+    .color-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px 10px;
+    }
+
+    .color-option {
+        gap: 8px;
+    }
+
+    .swatch {
+        width: 23px;
+        height: 23px;
+        min-width: 23px;
+    }
+}
+
