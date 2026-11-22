@@ -1918,7 +1918,7 @@ footer{
 
 .available-colors h4 {
     text-align: center;
-    font-size: 13px;
+    font-size: 18px;
     letter-spacing: 1.5px;
     margin-bottom: 22px;
 }
@@ -1951,12 +1951,12 @@ footer{
 }
 
 .color-option strong {
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .color-option small {
-    font-size: 11px;
+    font-size: 14px;
     color: #999;
 }
 
