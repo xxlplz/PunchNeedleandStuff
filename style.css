@@ -1911,19 +1911,3 @@ footer{
 
 }
 
-
-.available-colors h4 {
-    text-align: left;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.available-colors p {
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-.available-colors span {
-    color: #999;
-    font-size: 13px;
-}
